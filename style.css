@@ -1,0 +1,390 @@
+.zen-kaku-gothic-antique-light {
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body{
+  margin:0;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+  background: linear-gradient(to bottom, #F5F4B5 ,white, white);
+  background-repeat: no-repeat;
+}  
+
+/*space*/
+#space{
+  margin-bottom:4vw;
+}
+#space_top{
+  margin-bottom:20vw;
+}
+#space_bottom{
+  margin-bottom:12vw;
+}
+#space_event{
+  margin-bottom:2vw;
+}
+#space_m{
+  margin-bottom:10vw;
+}
+
+/*p*/
+p,h1{
+  padding:0;
+  margin:0;
+}
+p{
+  font-size:1.3vw;
+  font-weight:bold;
+}
+h2{
+  font-size:1.3vw;
+}
+
+/*top*/
+#top{
+  position:fixed;
+  top:0;
+  text-align: center;
+  background-color:rgba(0, 0, 0, 0.6);
+  color:white;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  width:100%;
+  padding:2vw 0 2vw 0;
+  z-index:10000;
+}
+#top img{
+  width:8%;
+}
+#top h1{
+  letter-spacing: 0.5vw;
+  font-weight:bold;
+}
+
+/*calender*/
+#calendar{
+  margin:0 auto;
+  width:80%;
+  height:45vw;
+  
+}
+iframe{
+  width:100%;
+  height:100%;
+}
+
+/*footer*/
+#footer img{
+  display:block;
+}
+#footer_black{
+  background-color:black;
+  height:6vw;
+}
+
+/*tab*/
+#tab{
+  z-index: 1000;
+}
+#tab p{
+  font-size:1.5vw;
+}
+.tab-3 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  margin:0 auto;
+  box-shadow: 2px 2px 8px gray;
+} 
+.tab-3 > label {
+  flex: 1 1;
+  order: -1;
+  min-width: 20%;
+  padding: .7em 1em .5em;
+  background-color: #f2f2f2;
+  color: #999;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+}
+.tab-3 > label:hover {
+  opacity: .8;
+}
+.tab-3 input {
+  display: none;
+}
+.tab-3 > div {
+  display: none;
+  width: 100%;
+  padding: 1.5em 1em;
+  background-color: #ffffff;
+}
+.tab-3 label:has(:checked) {
+  border-bottom: 4px solid #FEFF36;
+  color: black;
+}
+.tab-3 label:has(:checked) + div {
+  display: block;
+}
+
+/*event contents*/
+#event_contents{
+  margin-top:3vw;
+  display:flex;
+  font-size:1vw;
+}
+#banner img{
+  margin:0 auto;
+  width:80%;
+}
+#banner{
+  text-align: center;
+  width:50%;
+}
+#prize{
+  width:50%; 
+  margin-left:5%;
+}
+
+/*mitei*/
+p[for="mitei"]{
+  text-align: center;
+  font-size:1.2vw;
+}
+#space_mitei{
+  margin-bottom:10vw;
+}
+#caution{
+  text-align: center;
+}
+
+
+/*吹き出し設定*/
+#mikkuma_balloon{
+  display:flex;
+  margin-top:4vw;
+}
+#mikkuma {
+  width:50%;
+  padding:3vw;
+}
+#mikkuma img{
+  width:35%;
+}
+#balloon{
+  width:50%;
+}
+.balloon-007 {
+  width:50%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 0.25vw solid #666666;
+  border-radius:2vw;
+  padding:1.5vw;
+  text-align: center;
+  margin-left:50%;
+  background-color: #fff;
+  color: #333333;
+}
+.balloon-007 h2{
+  margin:0 auto;
+}
+
+.balloon-007::before,
+.balloon-007::after {
+  position: absolute;
+  right: -1vw;
+  width:0.8vw;
+  height: 1.5vw;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  content: '';
+}
+
+.balloon-007::before {
+  background-color: #666666;
+}
+
+.balloon-007::after {
+  right: -0.7vw;
+  background-color: #fff;
+}
+
+
+
+@media screen and (max-width: 480px) {
+
+  h2{
+    font-size:2.5vw;
+  }
+
+  /*space*/
+  #space_top{
+    margin-top:30vw;
+  }
+  #space{
+    margin-bottom:5vw;
+  }
+  #space_m{
+    margin-bottom:15vw;
+  }
+  #space_event{
+    margin-bottom:5vw;
+  }
+  #space_bottom{
+    margin-bottom:15vw;
+  }
+
+  /*top*/
+  #top{
+    position:fixed;
+    top:0;
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.6);
+    color:white;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    width:100%;
+    padding:2vw 0 2vw 0;
+  }
+  #top img{
+    width:20%;
+  }   
+  #top h1{
+    letter-spacing: 0.5vw;
+    font-weight:bold;
+    font-size:4vw;
+  }
+
+  /*event_contents*/
+  body{
+    font-size:0.8vw;
+  }
+
+  /*カレンダー*/
+  #calendar{
+    margin:0 auto;
+    width:90%;
+    height:70vw; 
+  }
+  iframe{
+    width:100%;
+    height:100%;
+  }
+
+  /*タブ*/
+
+  .tab-3 {
+    z-index: 10000;
+    margin-top:10vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin:0 auto;
+    box-shadow: 2px 2px 8px gray;
+  }      
+  .tab-3 > label {
+    flex: 1 1;
+    order: -1;
+    min-width: 20%;
+    padding: .7em 1em .5em;
+    background-color: #f2f2f2;
+    color: #999;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+  }
+  #prize{
+    font-size:2.1vw;
+    font-weight:bold;
+  }
+
+  /*p*/
+  p{
+    font-weight: bold;
+    padding:1vw;
+    font-size:3vw;
+  }
+  p[for="mitei"]{
+    text-align: center;
+    font-size:2.1vw;
+  }
+
+  /*footer*/
+  #footer_black{
+    background-color:black;
+    height:18vw;  
+  }
+
+  /*mitei*/
+  #space_mitei{
+    margin-bottom:17vw;
+  }
+  p[for="mitei"]{
+    text-align: center;
+    font-size:2.1vw;
+  }
+
+  #caution{
+    font-size:1.5vw;
+  }
+
+/*吹き出し設定*/
+#mikkuma_balloon{
+  display:flex;
+  margin-top:10vw;
+  margin-bottom:8vw;
+}
+#mikkuma {
+  width:50%;
+}
+#mikkuma img{
+  width:60%;
+}
+#balloon{
+  width:50%;
+}
+.balloon-007 {
+  width:80%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 0.35vw solid #666666;
+  border-radius:2.3vw;
+  padding:1.8vw;
+  text-align: center;
+  background-color: #fff;
+  color: #333333;
+  margin-left:25%;
+}
+.balloon-007 h2{
+  font-size:2.3vw;
+  margin:0 auto;
+}
+
+.balloon-007::before,
+.balloon-007::after {
+  position: absolute;
+  right: -1vw;
+  width:0.8vw;
+  height: 1.5vw;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  content: '';
+}
+
+.balloon-007::before {
+  background-color: #666666;
+}
+
+.balloon-007::after {
+  right: -0.7vw;
+  background-color: #fff;
+}
+
+#caution{
+  margin-bottom:10vw;
+}
+
+}
+
